@@ -6,10 +6,8 @@
   ==============================================================================
 */
 
-#ifndef MAINCOMPONENT_H_INCLUDED
-#define MAINCOMPONENT_H_INCLUDED
-
-#include "../JuceLibraryCode/JuceHeader.h"
+#pragma once
+#include <JuceHeader.h>
 
 #include "TextContentGenerator.h"
 #include "CustomLookAndFeel.h"
@@ -95,9 +93,4 @@ private:
 	#if JUCE_OPENGL
 		OpenGLContext openGLContext;
 	#endif
-	
-	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainContentComponent);
 };
-
-
-#endif  // MAINCOMPONENT_H_INCLUDED

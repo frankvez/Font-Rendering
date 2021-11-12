@@ -4,10 +4,9 @@
   ==============================================================================
 */
 
-#ifndef JUCE_CUSTOMLOOKANDFEEL_H_INCLUDED
-#define JUCE_CUSTOMLOOKANDFEEL_H_INCLUDED
+#pragma once
 
-#include "../JuceLibraryCode/JuceHeader.h"
+#include <JuceHeader.h>
 
 
 //==============================================================================
@@ -19,7 +18,7 @@ class CustomLookAndFeel   : public LookAndFeel_V2
 {
 public:
     CustomLookAndFeel();
-    ~CustomLookAndFeel();
+    ~CustomLookAndFeel() override;
 
     //==============================================================================
     void drawComboBox (Graphics&, int width, int height, bool isButtonDown,
@@ -36,6 +35,3 @@ public:
 	void setLookAndFeelBaseColours(Colour backgroundColour, Colour textColour);
 
 };
-
-
-#endif  

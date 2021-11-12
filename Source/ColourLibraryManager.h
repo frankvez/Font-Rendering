@@ -7,10 +7,9 @@
   ==============================================================================
 */
 
-#ifndef COLOURLIBRARYMANAGER_H_INCLUDED
-#define COLOURLIBRARYMANAGER_H_INCLUDED
+#pragma once
 
-#include "../JuceLibraryCode/JuceHeader.h"
+#include <JuceHeader.h>
 
 
 // Class to manage all the colours included in JUCE library
@@ -35,6 +34,3 @@ private:
 	StringArray theStringDatabase;
 	juce::Array <Colour> theColourDatabase;
 };
-
-
-#endif

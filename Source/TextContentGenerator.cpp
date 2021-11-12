@@ -22,7 +22,7 @@ TextContentGenerator::~TextContentGenerator()
 }
 
 const String TextContentGenerator::getLoremIpsum(int numParagraphs)
-{	String strText = String::empty;
+{	String strText = String();
 
 	for(int i=0; i<numParagraphs; i += 5)
 	{	
@@ -53,7 +53,7 @@ const String TextContentGenerator::getLoremIpsum(int numParagraphs)
 }
 
 const String TextContentGenerator::getQuickBrownFox(int numTimes)
-{	String strTemp = String::empty;
+{	String strTemp = String();
 
 	for(int i=0; i<numTimes; i++)
 		strTemp += "The quick brown fox jumps over the lazy dog. ";
@@ -62,9 +62,9 @@ const String TextContentGenerator::getQuickBrownFox(int numTimes)
 }
 
 const String TextContentGenerator::getASCIICharacters(int numTimes)
-{	String strTemp = String::empty;
+{	String strTemp = String();
 
-	String strModel = String::empty;
+	String strModel = String();
 	for(int i=33; i<147; i++)
 		strModel = strModel + String::charToString(i);
 

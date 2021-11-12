@@ -7,11 +7,9 @@
   ==============================================================================
 */
 
-#ifndef TEXTCONTENTGEN_H_INCLUDED
-#define TEXTCONTENTGEN_H_INCLUDED
+#pragma once
 
-
-#include "../JuceLibraryCode/JuceHeader.h"
+#include <JuceHeader.h>
 
 
 
@@ -31,8 +29,3 @@ public:
 private:
 
 };
-
-
-
-
-#endif

@@ -51,6 +51,7 @@ MainContentComponent::MainContentComponent()
 	comboFontHeight->addItem("12", 12);
 	comboFontHeight->addItem("13", 13);
 	comboFontHeight->addItem("14", 14);
+	comboFontHeight->addItem("15", 15);
 	comboFontHeight->addItem("16", 16);
 	comboFontHeight->addItem("18", 18);
 	comboFontHeight->addItem("20", 20);
@@ -71,6 +72,7 @@ MainContentComponent::MainContentComponent()
 	comboFontHeight->addItem("12p", 12+100);
 	comboFontHeight->addItem("13p", 13+100);
 	comboFontHeight->addItem("14p", 14+100);
+	comboFontHeight->addItem("15p", 15+100);
 	comboFontHeight->addItem("16p", 16+100);
 	comboFontHeight->addItem("18p", 18+100);
 	comboFontHeight->addItem("20p", 20+100);
@@ -314,7 +316,7 @@ void MainContentComponent::paint (Graphics& g)
 		
 		if (isGapPercents)
 		{	const int percents = strGap.substring(0, strGap.length()-1).getIntValue();
-			gap = roundFloatToInt((getWidth()-20) * percents / 100.f);
+			gap = roundToInt((getWidth()-20) * percents / 100.f);
 		}
 		else gap = strGap.substring(0, strGap.length()-2).getIntValue();
 
